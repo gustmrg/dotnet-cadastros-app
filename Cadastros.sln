@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadastros.Web", "Cadastros.Web\Cadastros.Web.csproj", "{A05F9209-A4C4-4947-9871-11539A41427C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A05F9209-A4C4-4947-9871-11539A41427C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A05F9209-A4C4-4947-9871-11539A41427C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A05F9209-A4C4-4947-9871-11539A41427C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A05F9209-A4C4-4947-9871-11539A41427C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
