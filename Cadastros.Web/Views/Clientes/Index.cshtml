@@ -1,16 +1,16 @@
 @model IEnumerable<Cadastros.Web.Models.Cliente>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Clientes";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>@ViewData["Title"]</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Novo Cliente</a>
 </p>
-<table class="table">
+<table class="table table-dark table-hover">
     <thead>
         <tr>
             <th>
@@ -30,7 +30,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+        <tr class="table-light">
             <td>
                 @Html.DisplayFor(modelItem => item.NomeCompleto)
             </td>
@@ -44,9 +44,9 @@
                 @Html.DisplayFor(modelItem => item.DataCadastro)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-dark"><i class="fa-solid fa-file-lines"></i></a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
             </td>
         </tr>
 }
