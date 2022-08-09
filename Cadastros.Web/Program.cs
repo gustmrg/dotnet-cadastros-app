@@ -2,9 +2,8 @@ using System.Text.RegularExpressions;
 using Cadastros.Web.Data;
 using Microsoft.EntityFrameworkCore;
 
+Environment.SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Production");
 var builder = WebApplication.CreateBuilder(args);
-
-
 
 // Configuração do PostgreSQL para rodar no Heroku
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
