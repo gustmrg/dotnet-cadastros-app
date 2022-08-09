@@ -4,6 +4,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>disable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>7d5f58d6-72f9-4b58-afba-0f23acd683b9</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
@@ -15,6 +16,11 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
       <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.7" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.6" />
     </ItemGroup>
+
+    <Target Name="PrePublishTarget" AfterTargets="Publish">
+        <Exec Command="dotnet ef database update" />
+    </Target>
 
 </Project>
