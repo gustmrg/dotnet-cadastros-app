@@ -19,6 +19,14 @@
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.6" />
     </ItemGroup>
 
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+        <EnvironmentName>Development</EnvironmentName>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <EnvironmentName>Production</EnvironmentName>
+    </PropertyGroup>
+
     <Target Name="PrePublishTarget" AfterTargets="Publish">
         <Exec Command="dotnet ef database update" />
     </Target>
