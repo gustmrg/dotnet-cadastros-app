@@ -2,11 +2,6 @@
   Cadastro de Clientes
 </h3>
 
-<p align="center">
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361" />
-
-</p>
 
 <p align="center">
   <a href="#rocket-sobre-o-desafio">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -16,6 +11,12 @@
   <a href="#">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#">Licença</a>
 </p>
+
+<div align="center">
+	<img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361" />
+	<a href="https://dotnet-cadastros-crud.herokuapp.com" target="_blank"><img alt="Website Status" src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=success&up_message=online&url=https%3A%2F%2Fdotnet-cadastros-crud.herokuapp.com%2F" /></a>
+</div>
+
 
 ## :trophy: Sobre o projeto
 
