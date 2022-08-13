@@ -1,3 +1,7 @@
+<p align="center">
+	<img src="https://github.com/gustmrg/dotnet-cadastros-crud-app/blob/main/dotnetcore.jpg" width="90" height="90" />
+</p>
+
 <h3 align="center">
   Cadastro de Clientes
 </h3>
