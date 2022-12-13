@@ -1,20 +1,14 @@
 <p align="center">
-	<img src="https://github.com/gustmrg/dotnet-cadastros-crud-app/blob/main/dotnetcore.jpg" width="90" height="90" />
+	<img 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" 
+    width="72" 
+    height="72" 
+  />           
 </p>
 
 <h3 align="center">
   Cadastro de Clientes
 </h3>
-
-
-<p align="center">
-  <a href="#rocket-sobre-o-desafio">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://dotnet-cadastros-crud.herokuapp.com" target="_blank">Link do deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#">Demonstração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#">Pré-requisito</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#">Licença</a>
-</p>
 
 <div align="center">
 	<img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361" />
