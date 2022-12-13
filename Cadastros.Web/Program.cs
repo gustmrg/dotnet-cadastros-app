@@ -1,8 +1,8 @@
+using System;
 using System.Text.RegularExpressions;
 using Cadastros.Web.Data;
 using Microsoft.EntityFrameworkCore;
 
-Environment.SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Production");
 var builder = WebApplication.CreateBuilder(args);
 
 // Configuração do PostgreSQL para rodar no Heroku
@@ -17,13 +17,21 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     else 
     {
         // So, use a local Connection
-        options.UseNpgsql(builder.Configuration.GetConnectionString("CONNECTION_STRING"));
+        options.UseSqlite(builder.Configuration.GetConnectionString("SQLITEDB_CONNECTION_STRING"));
     }
 });
 
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    context.Database.Migrate();
+}
 
 if (!app.Environment.IsDevelopment())
 {

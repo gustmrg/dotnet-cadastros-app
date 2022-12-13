@@ -1,0 +1,37 @@
+version: '3.4'
+
+networks:
+  cadastrosappmvc:
+    driver: bridge
+
+services:
+  cadastrosappmvc:
+    image: ${DOCKER_REGISTRY-}cadastrosappmvc
+    build:
+      context: .
+      dockerfile: ./Cadastros.Web/Dockerfile
+    depends_on:
+      - "postgres"
+    ports:
+      - "8000:80"
+    networks:
+      - cadastrosappmvc
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: "CadastrosDb"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgrespw"
+    volumes:
+      - db:/var/lib/postgres
+      - ./dbscripts/postgres:/docker-entrypoint-initdb.d
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    networks:
+      - cadastrosappmvc
+
+volumes:
+  db:
+    driver: local
