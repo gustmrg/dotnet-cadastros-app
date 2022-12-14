@@ -11,8 +11,8 @@
 </h3>
 
 <div align="center">
-	<img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361" />
-	<a href="https://dotnet-cadastros-crud.herokuapp.com" target="_blank"><img alt="Website Status" src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=success&up_message=online&url=https%3A%2F%2Fdotnet-cadastros-crud.herokuapp.com%2F" /></a>
+	<img alt="License" src="https://img.shields.io/github/license/gustmrg/dotnet-cadastros-crud-app" />	
+	<img alt="Website status" src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fdotnet-cadastros.azurewebsites.net%2F" />
 </div>
 
 
